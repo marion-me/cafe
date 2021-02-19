@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/order.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css.map">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+</head>
+<body>
+    <div class="land">
+        <div id="order">
+            <nav>
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="cafe.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <br>
+    <div id="order">
+        <h3>Place your order here!</h3>
+        <div class="book"></div>
+        <div class="col text-center"></div>
+        <div class="row">
+                <div class="col-md-4 mx-auto py-2">
+                  <form id="myForm">
+                    <div class="form-group">
+                        <label for="sel1">Coffee type</label>
+                        <select class="form-control" id="type">
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Cappuccino</option>
+                            <option>Americano</option>
+                            <option>Espresso</option>
+                            <option>Doppio</option>
+                            <option>Macchiato</option>
+                            <option>Mocha</option>
+                            <option>Milk</option>
+                            <option>Milk tea</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sel1">Select cake:</label>
+                        <select class="form-control" id="crust">
+                            <option>Black forest</option>
+                            <option>Vanilla</option>
+                            <option>Chocolate</option>
+                            <option>Velvet</option>
+                            <option>Coconut</option>
+                            <option>Strawberry</option>
+                            <option>cup cakes</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sel1">Select cookie:</label>
+                        <select class="form-control" id="top">
+                            <option>Lemmon Flovoured cookie</option>
+                            <option>Chocolate chip cookie</option>
+                            <option>Oreos</option>
+                            <option>Vanilla cookies</option>
+                            <option>Chocolate taste brownies</option>
+                        </select>
+                    </div>
+                    <div class="form-group" required>
+                        <label for="sel1">Quantity:</label>
+    
+                        <input type="number" id="qty" class="form-control" min="1" required>
+    
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mx-auto py-2">
+                    <div class="form-group" required="">
+                    <label for="sel1">Delivery option:</label>
+                    <select class="form-control" id="pick">
+                    <option value="1">Self pick up</option>
+                    <option value="2">Delivered</option>
+    
+                </select>
+            </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-danger btn-block">checkout</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

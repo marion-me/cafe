@@ -1,0 +1,114 @@
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(108, 116, 143);
+    }
+    nav{
+        position:fixed;
+        /* float: right; */
+        padding-left: 70%;
+    }
+      
+    li {
+        float: right;
+    }
+      
+    li a {
+        display: inline-block;
+        color: rgb(99, 43, 52);
+        font-size: 30px;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+      
+    li a:hover {
+        background-color:rgb(53, 56, 58);
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .container .box{
+        position: relative;
+        width: 350px;
+        padding: 40px;
+        background: rgb(87, 81, 81);
+        box-shadow: 0 5px 15px rgba(0,0,0,.1);
+        border-radius: 4px;
+        margin: 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-align: center;
+    }
+    .container .box:before{
+        content: '';
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(160, 158, 158, 0.2);
+        z-index: 2;
+        pointer-events: none;
+    }
+    .container .box .icon{
+        position: relative;
+        width: 80px;
+        height: 80px;
+        color: rgb(243, 232, 242);
+        background: rgb(216, 185, 141);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 50%;
+        font-size: 40px; 
+        font-weight: 700;
+        transition: 1s;
+    }
+    .container .box:nth-child(1) .icon{
+        box-shadow: 0 0 0 0 rgb(236, 221, 221);
+        background: rgb(96, 95, 97);
+    }
+    .container .box:nth-child(1):hover .icon{
+        box-shadow: 0 0 0 400px rgb(179, 144, 144);
+    }
+    .container .box .content{
+        position: relative;
+        z-index: 1;
+        transition: 0.5s;
+    }
+    .container .box:hover .content{
+        color: palevioletred;
+    }
+    .container .box .content h3{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    .container .box .content p{
+        margin: 0;
+        padding: 0;
+    }
+    a{
+        display: inline-block;
+        padding: 10px 20px;
+        background: #fff;
+        border-radius: 4px;
+        text-decoration: none;
+        color: rgba(12, 43, 33, 0.719);
+        font-weight: 500;
+        margin-top: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    }    
+#contact{
+    background-color: lightsteelblue;
+}
+#about{
+    font-family: cursive;
+    color: rgb(230, 230, 219);
+}
