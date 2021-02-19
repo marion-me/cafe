@@ -21,5 +21,4 @@ No known bugs
 
 ### License
 Licensed under MIT 
-Copyright (c) {2021} **{marion}** [LICENSE/MIT]
-  
+Copyright (c) {2021} **{marion}** [MIT License]
